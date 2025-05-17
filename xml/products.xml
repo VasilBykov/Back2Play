@@ -3331,7 +3331,7 @@
       </product>
 
       <product id="final_fantasy_iv">
-        <cover>/images/products/covers/new_games/final_fantasy_iv.jpg</cover>
+        <cover>/images/products/covers/classic_games/final_fantasy_iv.jpg</cover>
         <name>Final Fantasy IV</name>
         <price>79.99 BYN</price>
         <art>TT23501</art>
@@ -3533,7 +3533,7 @@
       </product>
 
       <product id="terraria">
-        <cover>/images/products/covers/new_games/terraria.jpg</cover>
+        <cover>/images/products/covers/classic_games/terraria.jpg</cover>
         <name>Terraria</name>
         <price>49.99 BYN</price>
         <art>TT23012</art>
@@ -3591,7 +3591,7 @@
       </product>
 
       <product id="heavy_rain">
-        <cover>/images/products/covers/new_games/heavy_rain.jpg</cover>
+        <cover>/images/products/covers/classic_games/heavy_rain.jpg</cover>
         <name>Heavy Rain</name>
         <price>89.99 BYN</price>
         <art>TT23494</art>
@@ -3654,7 +3654,7 @@
       </product>
 
       <product id="mafia_definitive_edition">
-        <cover>/images/products/covers/new_games/mafia_definitive_edition.jpg</cover>
+        <cover>/images/products/covers/classic_games/mafia_definitive_edition.jpg</cover>
         <name>Mafia: Definitive Edition</name>
         <price>89.99 BYN</price>
         <art>TT23508</art>
@@ -3716,7 +3716,7 @@
       </product>
 
       <product id="fallout_4">
-        <cover>/images/products/covers/new_games/fallout_4.jpg</cover>
+        <cover>/images/products/covers/classic_games/fallout_4.jpg</cover>
         <name>Fallout 4</name>
         <price>149.99 BYN</price>
         <art>TT23504</art>
@@ -3776,7 +3776,7 @@
       </product>
 
       <product id="final_fantasy_vii">
-        <cover>/images/products/covers/new_games/final_fantasy_vii.jpg</cover>
+        <cover>/images/products/covers/classic_games/final_fantasy_vii.jpg</cover>
         <name>Final Fantasy VII Remake</name>
         <price>139.99 BYN</price>
         <art>TT23498</art>
@@ -3956,7 +3956,7 @@
       </product>
 
       <product id="beamng_drive">
-        <cover>/images/products/covers/new_games/beamng_drive.jpg</cover>
+        <cover>/images/products/covers/simulation_games/beamng_drive.jpg</cover>
         <name>BeamNG.drive</name>
         <price>69.99 BYN</price>
         <art>TT23210</art>
@@ -4101,7 +4101,7 @@
       </product>
 
       <product id="project_zomboid">
-        <cover>/images/products/covers/new_games/project_zomboid.jpg</cover>
+        <cover>/images/products/covers/simulation_games/project_zomboid.jpg</cover>
         <name>Project Zomboid</name>
         <price>59.99 BYN</price>
         <art>TT23150</art>
@@ -4161,7 +4161,7 @@
       </product>
 
       <product id="inzoi">
-        <cover>/images/products/covers/new_games/inzoi.jpg</cover>
+        <cover>/images/products/covers/simulation_games/inzoi.jpg</cover>
         <name>Inzoi</name>
         <price>129.99 BYN</price>
         <art>TT22890</art>
@@ -4299,7 +4299,7 @@
       </product>
 
       <product id="microsoft_flight_simulator">
-        <cover>/images/products/covers/new_games/microsoft_flight_simulator.jpg</cover>
+        <cover>/images/products/covers/simulation_games/microsoft_flight_simulator.jpg</cover>
         <name>Microsoft Flight Simulator</name>
         <price>149.99 BYN</price>
         <art>TT23510</art>
@@ -4438,7 +4438,7 @@
       </product>
 
       <product id="stardew_valley">
-        <cover>/images/products/covers/new_games/stardew_valley.jpg</cover>
+        <cover>/images/products/covers/simulation_games/stardew_valley.jpg</cover>
         <name>Stardew Valley</name>
         <price>29.99 BYN</price>
         <art>TT23435</art>
@@ -4631,7 +4631,7 @@
       </product>
 
       <product id="farming_simulator_25">
-        <cover>/images/products/covers/new_games/farming_simulator_25.jpg</cover>
+        <cover>/images/products/covers/simulation_games/farming_simulator_25.jpg</cover>
         <name>Farming Simulator 25</name>
         <price>119.99 BYN</price>
         <art>TT23505</art>

@@ -477,21 +477,21 @@
 	z-index: 1000;
 
 	text-align: center;
-	font-family: $main-font;
-	color: $text-color;
 	@include fluid-text(21, 18);
+	color: rgba(0, 0, 0);
+	font-family: $main-font;
 	text-shadow: $standart-text-shadow-d;
 
 	background: linear-gradient(
 		135deg,
-		lighten($bg-color, 10%),
-		lighten($bg-color, 30%)
+		lighten($bg-color, 5%),
+		lighten($bg-color, 25%)
 	);
 
 	box-shadow: $standart-box-shadow, $standart-box-shadow-d;
 
-	backdrop-filter: blur(rem(3));
-	-webkit-backdrop-filter: blur(rem(3));
+	backdrop-filter: blur(rem(10));
+	-webkit-backdrop-filter: blur(rem(10));
 	@include transition-all(0.3s);
 	animation: fade-in 0.3s ease-in-out;
 

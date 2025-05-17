@@ -67,8 +67,8 @@ button {
   background: linear-gradient(135deg, white, #e8e8e8);
   -webkit-box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1), inset -0.0625rem -0.0625rem 0.125rem rgba(255, 255, 255, 0.6);
           box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1), inset -0.0625rem -0.0625rem 0.125rem rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(0.0625rem);
-  -webkit-backdrop-filter: blur(0.0625rem);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
@@ -87,8 +87,8 @@ button:active {
 
 /* Вспомогательные */
 header #logo:hover, header #logo img, header nav, header nav ul li a:hover, main #main-info .topics figure figcaption, main aside, footer {
-  backdrop-filter: blur(0.0625rem);
-  -webkit-backdrop-filter: blur(0.0625rem);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
 }
 
 main #main-info .topics figure figcaption:active, main #main-info .moover a:hover {
@@ -335,8 +335,8 @@ header nav ul li a:active {
     width: 100%;
     height: 8vh;
     padding: 0.5rem;
-    backdrop-filter: blur(0.0625rem);
-    -webkit-backdrop-filter: blur(0.0625rem);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
     -webkit-box-shadow: 0rem 0.125rem 0.3125rem #797979, inset -0.125rem -0.125rem 0.1875rem rgba(255, 255, 255, 0.8);
             box-shadow: 0rem 0.125rem 0.3125rem #797979, inset -0.125rem -0.125rem 0.1875rem rgba(255, 255, 255, 0.8);
   }
@@ -352,15 +352,15 @@ header nav ul li a:active {
   border-radius: 0.28125rem;
   z-index: 1000;
   text-align: center;
-  font-family: "medium", Tahoma;
-  color: rgb(45, 45, 45);
   font-size: clamp(1.125rem, 1.0600961538rem + 0.2884615385vw, 1.3125rem);
+  color: rgb(0, 0, 0);
+  font-family: "medium", Tahoma;
   text-shadow: 0.0625rem 0.0625rem 0.1875rem rgba(0, 0, 0, 0.2);
-  background: linear-gradient(135deg, rgba(97, 199, 94, 0.5), rgba(171, 226, 169, 0.5));
+  background: linear-gradient(135deg, rgba(79, 193, 75, 0.5), rgba(153, 219, 150, 0.5));
   -webkit-box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1), inset -0.125rem -0.125rem 0.25rem rgba(255, 255, 255, 0.5);
           box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1), inset -0.125rem -0.125rem 0.25rem rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(0.1875rem);
-  -webkit-backdrop-filter: blur(0.1875rem);
+  backdrop-filter: blur(0.625rem);
+  -webkit-backdrop-filter: blur(0.625rem);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-animation: fade-in 0.3s ease-in-out;
@@ -385,15 +385,15 @@ header nav ul li a:active {
   border-radius: 0.28125rem;
   z-index: 1000;
   text-align: center;
-  font-family: "medium", Tahoma;
-  color: rgb(45, 45, 45);
   font-size: clamp(1.125rem, 1.0600961538rem + 0.2884615385vw, 1.3125rem);
+  color: rgb(0, 0, 0);
+  font-family: "medium", Tahoma;
   text-shadow: 0.0625rem 0.0625rem 0.1875rem rgba(0, 0, 0, 0.2);
-  background: linear-gradient(135deg, rgba(246, 122, 132, 0.5), rgba(253, 217, 220, 0.5));
+  background: linear-gradient(135deg, rgba(245, 98, 110, 0.5), rgba(251, 194, 198, 0.5));
   -webkit-box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1), inset -0.125rem -0.125rem 0.25rem rgba(255, 255, 255, 0.5);
           box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1), inset -0.125rem -0.125rem 0.25rem rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(0.1875rem);
-  -webkit-backdrop-filter: blur(0.1875rem);
+  backdrop-filter: blur(0.625rem);
+  -webkit-backdrop-filter: blur(0.625rem);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-animation: fade-in 0.3s ease-in-out;
