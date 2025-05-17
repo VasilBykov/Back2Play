@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		resetInterval();
 	});
 
-	// === Поддержка свайпа на мобильных устройствах ===
+	// === Свайп на мобильных устройствах ===
 	let touchStartX = 0;
 	let touchEndX = 0;
 
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	});
 
-	// === Поддержка простого свайпа мышкой ===
+	// === Свайп мышкой ===
 	let isDragging = false;
 	let startX = 0;
 
@@ -119,12 +119,12 @@ document.addEventListener('DOMContentLoaded', () => {
 		isDragging = false;
 	});
 
-	// Если мышь ушла за пределы блока - сбрасываем
+	// Мышь ушла за пределы блока - сброс
 	bannerContainer.addEventListener('mouseleave', () => {
 		isDragging = false;
 	});
 
-	// Первый запуск
+	// Переключение банеров и первый запуск
 	updateBanner(currentIndex);
 	interval = setInterval(nextBanner, 8000);
 });

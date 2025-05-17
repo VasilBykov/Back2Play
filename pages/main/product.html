@@ -22,10 +22,7 @@
 				aria-expanded="false"
 				aria-controls="menu"
 			>
-				<img
-					src="/images/icons/bag.svg"
-					alt="Иконка меню-бургер"
-				/>
+				<img src="/images/icons/bag.svg" alt="Иконка меню-бургер" />
 				Навигация по сайту
 			</button>
 
@@ -64,7 +61,7 @@
 					</button>
 
 					<div id="thumbnail-column">
-						<!-- Сюда подставялть изображение миниатюр -->
+						<!-- Подставляется из XML через JS: product.js -->
 					</div>
 
 					<button id="bottom-btn">
@@ -74,7 +71,7 @@
 
 				<div id="main-image-wrapper">
 					<div id="main-image">
-						<!-- Сюда подставялть изображение миниатюр -->
+						<!-- Подставляется из XML через JS: product.js -->
 					</div>
 
 					<div id="bottom-button">
@@ -88,23 +85,23 @@
 				</div>
 
 				<div id="info">
-					<h2><!-- Имя товара --></h2>
+					<h2>
+						<!-- Имя товара - подставляется из XML через JS: product.js -->
+					</h2>
 
-					<h3><!-- Цена товара --></h3>
+					<h3>
+						<!-- Цена товара - подставляется из XML через JS: product.js -->
+					</h3>
 
-					<button>
-						Оставить заявку на приобритение*
-					</button>
+					<button>Оставить заявку на приобритение*</button>
 
 					<h4>Краткое описание:</h4>
 
 					<ul>
-						<!-- Информация -->
+						<!-- Информация - подставляется из XML через JS: product.js -->
 					</ul>
 
-					<p>
-						*Cтоимость товара может варьироваться.
-					</p>
+					<p>*Cтоимость товара может варьироваться.</p>
 				</div>
 			</section>
 
@@ -113,22 +110,20 @@
 					<nav>
 						<button data-tab="description">О игре</button>
 						<button data-tab="set">Возможности</button>
-						<button data-tab="requirements">
-							Дополнительно
-						</button>
+						<button data-tab="requirements">Дополнительно</button>
 					</nav>
 
 					<div id="tab-content">
 						<article id="description" class="tab active">
-							<!-- Описание товара -->
+							<!-- Описание товара - подставляется из XML через JS: product.js -->
 						</article>
 
 						<article id="set" class="tab">
-							<!-- Комплект поставки -->
+							<!-- Комплект поставки - подставляется из XML через JS: product.js -->
 						</article>
 
 						<article id="requirements" class="tab">
-							<!-- Системные требования -->
+							<!-- Системные требования - подставляется из XML через JS: product.js -->
 						</article>
 					</div>
 				</div>
