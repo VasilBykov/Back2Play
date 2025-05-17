@@ -1,0 +1,112 @@
+@use 'variables.scss' as *;
+@use 'utils.scss' as *;
+
+/* Основные */
+
+%standart-link-style {
+	text-decoration: none;
+	color: $link-color;
+}
+
+%standart-img-style {
+	object-fit: cover;
+	background-color: $background-elements-color-d;
+	border: $light-border;
+	border-radius: $standart-border-radius;
+	box-shadow: $standart-box-shadow, $inner-white-shadow;
+}
+
+%standart-icon-style {
+	max-width: rem(20);
+	max-height: rem(20);
+	border: none;
+	box-shadow: none;
+}
+
+%standart-figure-animation {
+	transition: $transition-default;
+
+	&:hover {
+		box-shadow: 0px 4px 10px lighten($link-color, 30%),
+			inset -1px -1px 3px rgba(255, 255, 255, 0.8);
+		transform: scale(1.05);
+	}
+}
+
+%standart-button-style {
+	cursor: pointer;
+	padding: rem(8) rem(16);
+	border: none;
+	border-radius: $standart-border-radius;
+	font-family: $main-font;
+	font-size: rem(18);
+	color: $text-color;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+	background: $gradient-btn;
+	box-shadow: $standart-box-shadow, $inner-white-shadow;
+	backdrop-filter: $blur;
+	-webkit-backdrop-filter: $blur;
+	transition: $transition-fast;
+
+	&:hover {
+		background: $gradient-btn-hover;
+		box-shadow: $hover-shadow-button;
+	}
+
+	&:active {
+		background: $gradient-active;
+		box-shadow: $active-shadow-button;
+		transform: translateY(1px);
+	}
+}
+
+%banner-button-style {
+	cursor: pointer;
+	font-size: rem(45);
+	border: none;
+	border-radius: $standart-border-radius;
+	background: transparent;
+	box-shadow: none;
+	font-family: $main-font;
+	color: $text-color;
+	backdrop-filter: $blur;
+	-webkit-backdrop-filter: $blur;
+	transition: $transition-fast;
+
+	&:hover {
+		background: rgba(0, 0, 0, 0.15);
+		color: rgba(255, 255, 255, 0.85);
+	}
+
+	&:active {
+		background: rgba(0, 0, 0, 0.4);
+		box-shadow: inset -3px 0px 4px rgba(0, 0, 0, 0.4),
+			inset 3px 0px 4px rgba(0, 0, 0, 0.4);
+	}
+}
+
+%styled-box {
+	border: $light-border;
+	border-radius: $standart-border-radius;
+	backdrop-filter: $blur;
+	-webkit-backdrop-filter: $blur;
+	box-shadow: $standart-box-shadow, $inner-white-shadow;
+	transition: $transition-default;
+}
+
+/* Вспомогательные */
+
+%blurred {
+	backdrop-filter: $blur;
+	-webkit-backdrop-filter: $blur;
+}
+
+%hover-box-shadow {
+	box-shadow: $box-shadow-hover;
+}
+
+%active-box-shadow {
+	background: $gradient-active;
+	box-shadow: $box-shadow-active;
+	transform: $standart-transform;
+}

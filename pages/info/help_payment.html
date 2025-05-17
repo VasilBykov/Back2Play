@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Back2Play</title>
+		<link rel="icon" href="/images/icons/laptop.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="/css/info.css" />
+	</head>
+
+	<body>
+		<header>
+			<a href="/pages/main/index.html" id="logo">
+				<img
+					src="/images/index/logo/Back2Play_black.svg"
+					alt="Логотип Back2Play"
+				/>
+			</a>
+
+			<button
+				id="burger-toggle"
+				aria-expanded="false"
+				aria-controls="menu"
+			>
+				<img
+					src="/images/icons/bag.svg"
+					alt="Иконка меню-бургер"
+				/>
+				Навигация по сайту
+			</button>
+
+			<nav id="menu">
+				<ul>
+					<li><a href="/pages/main/index.html">Главная</a></li>
+					<li>
+						<a href="/pages/main/games.html?id=page_new_games_1">
+							Игровые новинки
+						</a>
+					</li>
+					<li>
+						<a
+							href="/pages/main/games.html?id=page_classic_games_1"
+						>
+							Классика
+						</a>
+					</li>
+					<li>
+						<a
+							href="/pages/main/games.html?id=page_simulation_games_1"
+						>
+							Симуляторы
+						</a>
+					</li>
+					<li><a href="/pages/info/about_us.html">О нас</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section style="grid-area: mi" id="main-info">
+				<div class="topics">
+					<h1>Оплата</h1>
+					<p>
+						В
+						<strong>Back2Play</strong>
+						мы придерживаемся принципа
+						прозрачности и безопасности
+						покупок. Именно поэтому
+						<strong>
+							все платежи осуществляются только
+							при личной встрече
+						</strong>
+						— будь то в нашем магазине в
+						Минске, при самовывозе или при
+						доставке курьером.
+					</p>
+					<p>
+						Мы принимаем
+						<strong>наличный расчёт</strong>
+						, а также
+						<strong>банковские карты</strong>
+						любых белорусских и международных
+						платёжных систем. Также доступны
+						другие популярные способы оплаты —
+						уточняйте при согласовании
+						покупки.
+					</p>
+					<p>
+						Все заказы предварительно
+						<strong>
+							подтверждаются по телефону
+						</strong>
+						, чтобы вы точно знали, что товар вас
+						ждёт. Это гарантирует, что вы
+						получаете именно то, что выбрали.
+					</p>
+
+					<h1>Возврат и обмен</h1>
+					<p>
+						Мы ценим каждого клиента, поэтому
+						стремимся к тому, чтобы каждая
+						покупка была осознанной и
+						приятной. Однако если возникла
+						необходимость вернуть или обменять
+						товар — мы открыты к диалогу.
+					</p>
+					<ul>
+						<li>
+							<strong>
+								Физические копии (диски)
+							</strong>
+							можно вернуть или обменять в
+							течение 14 дней при условии, что
+							упаковка не вскрыта и товар не
+							использовался.
+						</li>
+						<li>
+							<strong>Цифровые ключи</strong>
+							не подлежат возврату или
+							обмену, если код был
+							активирован или передан
+							покупателю — в соответствии с
+							законодательством Республики
+							Беларусь.
+						</li>
+						<li>
+							В случае брака, повреждения
+							упаковки или проблем с
+							активацией — мы рассмотрим ситуацию
+							индивидуально и постараемся
+							найти максимально честное и
+							удобное решение.
+						</li>
+					</ul>
+					<p>
+						Чтобы оформить возврат или обмен,
+						достаточно
+						<strong>
+							позвонить нам или прийти в
+							магазин
+						</strong>
+						с чеком и товаром. Мы всегда идём
+						навстречу — главное, чтобы вы остались
+						довольны покупкой.
+					</p>
+					<p>
+						<em>
+							Back2Play — честные игры и честный
+							сервис.
+						</em>
+					</p>
+				</div>
+			</section>
+
+			<aside style="grid-area: ai" id="aside-info">
+				<form id="subscribe-form">
+					<h4>Подпишись на Back2Play!</h4>
+					<p>
+						<label>
+							Имя:
+							<input
+								type="text"
+								name="name"
+								enterkeyhint="next"
+								autocomplete="name"
+							/>
+						</label>
+					</p>
+					<p>
+						<label>
+							Email:
+							<input
+								type="text"
+								name="email"
+								enterkeyhint="next"
+								autocomplete="email"
+							/>
+						</label>
+					</p>
+					<p>
+						<label>
+							Ваша платформа:
+							<input
+								type="text"
+								name="platform"
+								enterkeyhint="done"
+								autocomplete="off"
+							/>
+						</label>
+					</p>
+					<button type="submit">Подписаться</button>
+				</form>
+
+				<div>
+					<h4>Поддержка:</h4>
+					<div>
+						<a
+							href="/pages/info/help_payment.html"
+							class="art-link"
+						>
+							<img src="/images/icons/money.svg" class="icon" />
+							<p>Оплата и возврат</p>
+						</a>
+						<a
+							href="/pages/info/help_find_us.html"
+							class="art-link"
+						>
+							<img src="/images/icons/light.svg" class="icon" />
+							<p>Где нас можно найти</p>
+						</a>
+						<a
+							href="/pages/info/help_delivery.html"
+							class="art-link"
+						>
+							<img src="/images/icons/cup.svg" class="icon" />
+							<p>Вопросы по доставке</p>
+						</a>
+
+						<h4>Наша редакция выбирает:</h4>
+
+						<!-- Подставляется из XML через JS: aside.js -->
+					</div>
+				</div>
+			</aside>
+		</main>
+
+		<footer>
+			<div id="end">
+				<img src="/images/icons/heart_l.svg" class="icon" />
+				<p>Back2Play&#169; - Все права защищены</p>
+			</div>
+
+			<div id="contact">
+				<img src="/images/icons/phone.svg" class="icon" />
+				<p>Номер телефона: +375 (29) 229-42-29</p>
+			</div>
+		</footer>
+
+		<script src="/scripts/index/header.js"></script>
+		<script src="/scripts/index/form.js"></script>
+		<script src="/scripts/index/aside.js"></script>
+	</body>
+</html>

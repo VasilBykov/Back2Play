@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* Перевод pixel в rem */
+/* Адаптивный размер шрифта */
+/* Шрифты */
+@font-face {
+  font-family: "light";
+  src: url("/fonts/Tektur_l.ttf") format("truetype");
+}
+@font-face {
+  font-family: "medium";
+  src: url("/fonts/Tektur_m.ttf") format("truetype");
+}
+@font-face {
+  font-family: "bold";
+  src: url("/fonts/Tektur_b.ttf") format("truetype");
+}
+/* Цвета */
+/* Размеры и отступы */
+/* Тени и эффекты */
+/* Градиенты */
+/* Переходы */
+/* Эффекты элементов */
+/* Основные */
+/* Вспомогательные */
+/* Основные */
+/* Вспомогательные *//*# sourceMappingURL=mixin.css.map */
