@@ -4,275 +4,275 @@
 @use '../other/variables' as *;
 
 body {
-	@include style-body;
+    @include style-body;
 }
 
 header {
-	@include style-header;
+    @include style-header;
 }
 
 a {
-	@extend %standart-link-style;
+    @extend %standart-link-style;
 }
 
 button {
-	@extend %standart-button-style;
+    @extend %standart-button-style;
 
-	img {
-		@extend %standart-icon-style;
-	}
+    img {
+        @extend %standart-icon-style;
+    }
 }
 
 .toast {
-	@include toast-style(rgba(66, 180, 62, 0.5));
+    @include toast-style(rgba(66, 180, 62, 0.5));
 
-	&.error {
-		@include toast-style(rgb(243, 74, 88, 0.5));
-	}
+    &.error {
+        @include toast-style(rgb(243, 74, 88, 0.5));
+    }
 }
 
 main {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: rem(20);
-	margin: rem(20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: rem(20);
+    margin: rem(20);
 
-	#product-top {
-		display: flex;
-		flex-direction: row;
-		gap: rem(50);
+    #product-top {
+        display: flex;
+        flex-direction: row;
+        gap: rem(50);
 
-		@media (max-width: rem(1235)) {
-			flex-direction: column;
-			gap: $standart-gap;
-			width: 100%;
-		}
+        @media (max-width: rem(1235)) {
+            flex-direction: column;
+            gap: $standart-gap;
+            width: 100%;
+        }
 
-		#thumbnail {
-			display: flex;
-			flex-direction: column;
-			gap: $standart-gap;
-			width: rem(235);
-			height: rem(575);
-			@extend %styled-box;
+        #thumbnail {
+            display: flex;
+            flex-direction: column;
+            gap: $standart-gap;
+            width: rem(235);
+            height: rem(575);
+            @extend %styled-box;
 
-			button {
-				width: 100%;
-			}
+            button {
+                width: 100%;
+            }
 
-			#thumbnail-column {
-				display: flex;
-				flex-direction: column;
-				gap: $standart-gap;
-				overflow-y: hidden;
+            #thumbnail-column {
+                display: flex;
+                flex-direction: column;
+                gap: $standart-gap;
+                overflow-y: hidden;
 
-				img {
-					@extend %standart-img-style;
-				}
-			}
+                img {
+                    @extend %standart-img-style;
+                }
+            }
 
-			@media (max-width: rem(1505)) {
-				display: none;
-			}
-		}
+            @media (max-width: rem(1505)) {
+                display: none;
+            }
+        }
 
-		#main-image-wrapper {
-			display: flex;
-			flex-direction: column;
-			gap: $standart-gap;
-			height: rem(575);
-			@extend %styled-box;
+        #main-image-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: $standart-gap;
+            height: rem(575);
+            @extend %styled-box;
 
-			#main-image {
-				flex: 1;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				overflow: hidden;
-				box-sizing: border-box;
-				@extend %standart-img-style;
+            #main-image {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                box-sizing: border-box;
+                @extend %standart-img-style;
 
-				img {
-					width: 100%;
-					width: rem(800);
-					height: auto;
-					max-height: 100%;
-					object-fit: contain;
-				}
-			}
+                img {
+                    width: 100%;
+                    width: rem(800);
+                    height: auto;
+                    max-height: 100%;
+                    object-fit: contain;
+                }
+            }
 
-			#bottom-button {
-				display: flex;
-				flex-direction: row;
-				gap: rem(5);
-				justify-content: center;
+            #bottom-button {
+                display: flex;
+                flex-direction: row;
+                gap: rem(5);
+                justify-content: center;
 
-				button {
-					width: 50%;
-				}
-			}
+                button {
+                    width: 50%;
+                }
+            }
 
-			@media (max-width: rem(650)) {
-				height: rem(275);
+            @media (max-width: rem(650)) {
+                height: rem(275);
 
-				#main-image img {
-					width: 100%;
-				}
-			}
-		}
+                #main-image img {
+                    width: 100%;
+                }
+            }
+        }
 
-		#info {
-			display: flex;
-			flex-direction: column;
-			gap: rem(5);
-			align-items: center;
-			justify-content: center;
-			padding: rem(15);
-			box-sizing: border-box;
-			@extend %styled-box;
+        #info {
+            display: flex;
+            flex-direction: column;
+            gap: rem(5);
+            align-items: center;
+            justify-content: center;
+            padding: rem(15);
+            box-sizing: border-box;
+            @extend %styled-box;
 
-			h2 {
-				margin: rem(18);
-				@include fluid-text(29, 25);
-			}
+            h2 {
+                margin: rem(18);
+                @include fluid-text(29, 25);
+            }
 
-			h3 {
-				margin: rem(10);
-				@include fluid-text(27, 23);
-			}
+            h3 {
+                margin: rem(10);
+                @include fluid-text(27, 23);
+            }
 
-			h4 {
-				margin: rem(15);
-				@include fluid-text(23, 19);
-			}
+            h4 {
+                margin: rem(15);
+                @include fluid-text(23, 19);
+            }
 
-			ul {
-				padding-left: rem(35);
-				margin: 0;
+            ul {
+                padding-left: rem(35);
+                margin: 0;
 
-				li {
-					@include fluid-text(18, 16);
-				}
-			}
+                li {
+                    @include fluid-text(18, 16);
+                }
+            }
 
-			p {
-				text-align: center;
-				margin-bottom: 0;
-				@include fluid-text(16, 12);
-			}
+            p {
+                text-align: center;
+                margin-bottom: 0;
+                @include fluid-text(16, 12);
+            }
 
-			@media (max-width: rem(1235)) {
-				width: 100%;
-				gap: 0;
+            @media (max-width: rem(1235)) {
+                width: 100%;
+                gap: 0;
 
-				button {
-					width: 65%;
-				}
-			}
+                button {
+                    width: 65%;
+                }
+            }
 
-			@media (max-width: rem(725)) {
-				button {
-					width: 100%;
-				}
-			}
-		}
-	}
+            @media (max-width: rem(725)) {
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
 
-	#product-bottom {
-		width: 100%;
+    #product-bottom {
+        width: 100%;
 
-		.bottom {
-			display: flex;
-			flex-direction: row;
-			gap: $standart-gap;
+        .bottom {
+            display: flex;
+            flex-direction: row;
+            gap: $standart-gap;
 
-			@media (max-width: rem(935)) {
-				gap: $standart-gap;
-				flex-direction: column;
-			}
+            @media (max-width: rem(935)) {
+                gap: $standart-gap;
+                flex-direction: column;
+            }
 
-			nav {
-				display: flex;
-				flex-direction: column;
-				width: rem(255);
-				gap: $standart-gap;
-				box-sizing: border-box;
-				@extend %styled-box;
+            nav {
+                display: flex;
+                flex-direction: column;
+                width: rem(255);
+                gap: $standart-gap;
+                box-sizing: border-box;
+                @extend %styled-box;
 
-				button:first-child {
-					margin-top: $standart-gap;
-				}
+                button:first-child {
+                    margin-top: $standart-gap;
+                }
 
-				button:last-child {
-					margin-bottom: $standart-gap;
-				}
+                button:last-child {
+                    margin-bottom: $standart-gap;
+                }
 
-				@media (max-width: rem(935)) {
-					flex-direction: column;
-					width: 100%;
-				}
-			}
+                @media (max-width: rem(935)) {
+                    flex-direction: column;
+                    width: 100%;
+                }
+            }
 
-			#tab-content {
-				display: flex;
-				flex-direction: column;
-				text-align: justify;
-				width: 100%;
-				padding-left: rem(25);
-				padding-right: rem(25);
-				box-sizing: border-box;
-				@extend %styled-box;
+            #tab-content {
+                display: flex;
+                flex-direction: column;
+                text-align: justify;
+                width: 100%;
+                padding-left: rem(25);
+                padding-right: rem(25);
+                box-sizing: border-box;
+                @extend %styled-box;
 
-				h3 {
-					@include fluid-text(20, 18);
-				}
+                h3 {
+                    @include fluid-text(20, 18);
+                }
 
-				p {
-					@include fluid-text(18, 16);
-				}
+                p {
+                    @include fluid-text(18, 16);
+                }
 
-				ul {
-					padding-left: rem(20);
+                ul {
+                    padding-left: rem(20);
 
-					li {
-						padding-bottom: rem(5);
-					}
-				}
+                    li {
+                        padding-bottom: rem(5);
+                    }
+                }
 
-				#requirements {
-					ul {
-						margin: 0;
-					}
+                #requirements {
+                    ul {
+                        margin: 0;
+                    }
 
-					ul:last-child {
-						margin-bottom: rem(15);
-					}
-				}
+                    ul:last-child {
+                        margin-bottom: rem(15);
+                    }
+                }
 
-				@media (max-width: rem(935)) {
-					width: 100%;
-					padding-left: rem(15);
-					padding-right: rem(15);
+                @media (max-width: rem(935)) {
+                    width: 100%;
+                    padding-left: rem(15);
+                    padding-right: rem(15);
 
-					h3,
-					h4 {
-						text-align: center;
-					}
-				}
+                    h3,
+                    h4 {
+                        text-align: center;
+                    }
+                }
 
-				.tab {
-					display: none;
+                .tab {
+                    display: none;
 
-					&.active {
-						display: block;
-					}
-				}
-			}
-		}
-	}
+                    &.active {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
 }
 
 footer {
-	@include style-footer;
+    @include style-footer;
 }

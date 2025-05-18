@@ -4,184 +4,184 @@
 @use '../other/variables' as *;
 
 body {
-	@include style-body;
+    @include style-body;
 }
 
 header {
-	@include style-header;
+    @include style-header;
 }
 
 a {
-	@extend %standart-link-style;
+    @extend %standart-link-style;
 }
 
 button {
-	@extend %standart-button-style;
+    @extend %standart-button-style;
 }
 
 .toast {
-	@include toast-style(rgba(66, 180, 62, 0.5));
+    @include toast-style(rgba(66, 180, 62, 0.5));
 
-	&.error {
-		@include toast-style(rgb(243, 74, 88, 0.5));
-	}
+    &.error {
+        @include toast-style(rgb(243, 74, 88, 0.5));
+    }
 }
 
 main {
-	display: grid;
-	grid-template-columns: rem(315) auto;
-	column-gap: rem(15);
-	grid-template-rows: repeat(3, auto);
-	row-gap: rem(15);
-	grid-template-areas:
-		'mp mp'
-		'ai mi'
-		'ai mi';
-	margin: rem(20);
+    display: grid;
+    grid-template-columns: rem(315) auto;
+    column-gap: rem(15);
+    grid-template-rows: repeat(3, auto);
+    row-gap: rem(15);
+    grid-template-areas:
+        'mp mp'
+        'ai mi'
+        'ai mi';
+    margin: rem(20);
 
-	@media (max-width: rem(850)) {
-		grid-template-columns: 100%;
-		grid-template-areas:
-			'mp'
-			'ai'
-			'mi';
-	}
+    @media (max-width: rem(850)) {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            'mp'
+            'ai'
+            'mi';
+    }
 
-	#promo {
-		display: flex;
-		width: 100%;
-		min-height: rem(100);
-		height: 35vh;
-		@extend %standart-img-style;
+    #promo {
+        display: flex;
+        width: 100%;
+        min-height: rem(100);
+        height: 35vh;
+        @extend %standart-img-style;
 
-		@media (max-height: rem(615)) {
-			min-height: rem(200);
-			height: 50vh;
-		}
+        @media (max-height: rem(615)) {
+            min-height: rem(200);
+            height: 50vh;
+        }
 
-		.banner-container {
-			position: relative;
-			display: flex;
-			align-items: center;
-			width: 100%;
-			overflow: hidden;
-			user-select: none;
-			-webkit-user-drag: none;
+        .banner-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            overflow: hidden;
+            user-select: none;
+            -webkit-user-drag: none;
 
-			img {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-				filter: brightness(0.5);
-				pointer-events: none;
-				user-select: none;
-				-webkit-user-drag: none;
-			}
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                filter: brightness(0.5);
+                pointer-events: none;
+                user-select: none;
+                -webkit-user-drag: none;
+            }
 
-			.banner-content {
-				position: absolute;
-				top: 50%;
-				left: 15vw;
-				right: 10vw;
-				transform: translateY(-50%);
-				color: white;
-				user-select: none;
+            .banner-content {
+                position: absolute;
+                top: 50%;
+                left: 15vw;
+                right: 10vw;
+                transform: translateY(-50%);
+                color: white;
+                user-select: none;
 
-				h1 {
-					@include fluid-text(36, 23);
-					margin-bottom: rem(25);
-				}
+                h1 {
+                    @include fluid-text(36, 23);
+                    margin-bottom: rem(25);
+                }
 
-				p {
-					@include fluid-text(21, 16);
-					margin-bottom: rem(25);
-				}
-			}
+                p {
+                    @include fluid-text(21, 16);
+                    margin-bottom: rem(25);
+                }
+            }
 
-			.banner-btn {
-				position: absolute;
-				margin: auto 0;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				width: rem(95);
-				height: rem(95);
-				@extend %banner-button-style;
+            .banner-btn {
+                position: absolute;
+                margin: auto 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: rem(95);
+                height: rem(95);
+                @extend %banner-button-style;
 
-				&.left {
-					left: rem(5);
-				}
+                &.left {
+                    left: rem(5);
+                }
 
-				&.right {
-					right: rem(5);
-				}
+                &.right {
+                    right: rem(5);
+                }
 
-				@media (max-width: rem(800)) {
-					display: none;
-				}
-			}
-		}
-	}
+                @media (max-width: rem(800)) {
+                    display: none;
+                }
+            }
+        }
+    }
 
-	#main-info {
-		display: flex;
-		flex-direction: column;
-		gap: $standart-gap;
-		align-items: center;
+    #main-info {
+        display: flex;
+        flex-direction: column;
+        gap: $standart-gap;
+        align-items: center;
 
-		h1 {
-			color: $text-color;
-			@include fluid-text(30, 26);
-			margin-bottom: rem(15);
-			text-align: center;
-		}
+        h1 {
+            color: $text-color;
+            @include fluid-text(30, 26);
+            margin-bottom: rem(15);
+            text-align: center;
+        }
 
-		.topics {
-			display: flex;
-			flex-flow: row wrap;
-			gap: rem(15);
-			justify-content: center;
-			align-items: center;
+        .topics {
+            display: flex;
+            flex-flow: row wrap;
+            gap: rem(15);
+            justify-content: center;
+            align-items: center;
 
-			@media (max-width: rem(850)) {
-				flex-flow: column;
-			}
+            @media (max-width: rem(850)) {
+                flex-flow: column;
+            }
 
-			p {
-				text-align: justify;
-				margin: 0;
-				@include fluid-text(21, 18);
-				line-height: 1.5;
-				hyphens: auto;
-			}
+            p {
+                text-align: justify;
+                margin: 0;
+                @include fluid-text(21, 18);
+                line-height: 1.5;
+                hyphens: auto;
+            }
 
-			figure {
-				margin: 0;
-				@extend %standart-figure-animation;
+            figure {
+                margin: 0;
+                @extend %standart-figure-animation;
 
-				img {
-					@extend %standart-img-style;
-				}
+                img {
+                    @extend %standart-img-style;
+                }
 
-				figcaption {
-					@include style-figcaption;
-				}
+                figcaption {
+                    @include style-figcaption;
+                }
 
-				@media (max-width: rem(850)) {
-					img {
-						box-sizing: border-box;
-						width: 100%;
-					}
-				}
-			}
-		}
-	}
+                @media (max-width: rem(850)) {
+                    img {
+                        box-sizing: border-box;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
 
-	#aside-info {
-		@include style-aside;
-	}
+    #aside-info {
+        @include style-aside;
+    }
 }
 
 footer {
-	@include style-footer;
+    @include style-footer;
 }

@@ -3,18 +3,18 @@
 /* Шрифты */
 
 @font-face {
-	font-family: 'light';
-	src: url('/fonts/Tektur_l.ttf') format('truetype');
+    font-family: 'light';
+    src: url('/fonts/Tektur_l.ttf') format('truetype');
 }
 
 @font-face {
-	font-family: 'medium';
-	src: url('/fonts/Tektur_m.ttf') format('truetype');
+    font-family: 'medium';
+    src: url('/fonts/Tektur_m.ttf') format('truetype');
 }
 
 @font-face {
-	font-family: 'bold';
-	src: url('/fonts/Tektur_b.ttf') format('truetype');
+    font-family: 'bold';
+    src: url('/fonts/Tektur_b.ttf') format('truetype');
 }
 
 $main-font: 'medium', Tahoma;
@@ -52,35 +52,35 @@ $standart-text-shadow: rem(1) rem(1) rem(2) rgba(255, 255, 255, 0.8);
 $standart-text-shadow-d: rem(1) rem(1) rem(3) rgba(0, 0, 0, 0.2);
 
 $hover-shadow-button: rem(0) rem(2) rem(5) lighten($link-color, 20%),
-	inset rem(-2) rem(-2) rem(3) rgba(255, 255, 255, 0.8);
+    inset rem(-2) rem(-2) rem(3) rgba(255, 255, 255, 0.8);
 
 $active-shadow-button: inset rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.4),
-	rem(1) rem(1) rem(2) rgba(255, 255, 255, 0.3);
+    rem(1) rem(1) rem(2) rgba(255, 255, 255, 0.3);
 
 $box-shadow-hover: rem(0) rem(2) rem(5) lighten($link-color, 20%),
-	inset rem(-2) rem(-2) rem(3) rgba(255, 255, 255, 0.8);
+    inset rem(-2) rem(-2) rem(3) rgba(255, 255, 255, 0.8);
 
 $box-shadow-active: inset rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.4),
-	rem(1) rem(1) rem(2) rgba(255, 255, 255, 0.3);
+    rem(1) rem(1) rem(2) rgba(255, 255, 255, 0.3);
 
 /* Градиенты */
 
 $gradient-btn: linear-gradient(
-	135deg,
-	lighten($background-elements-color, 20%),
-	darken($background-elements-color, 5%)
+    135deg,
+    lighten($background-elements-color, 20%),
+    darken($background-elements-color, 5%)
 );
 
 $gradient-btn-hover: linear-gradient(
-	135deg,
-	lighten($background-elements-color, 30%),
-	lighten($background-elements-color, 10%)
+    135deg,
+    lighten($background-elements-color, 30%),
+    lighten($background-elements-color, 10%)
 );
 
 $gradient-active: linear-gradient(
-	135deg,
-	darken($background-elements-color, 10%),
-	darken($background-elements-color, 20%)
+    135deg,
+    darken($background-elements-color, 10%),
+    darken($background-elements-color, 20%)
 );
 
 /* Переходы */

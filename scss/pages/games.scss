@@ -4,96 +4,96 @@
 @use '../other/variables' as *;
 
 body {
-	@include style-body;
+    @include style-body;
 }
 
 header {
-	@include style-header;
+    @include style-header;
 }
 
 a {
-	@extend %standart-link-style;
+    @extend %standart-link-style;
 }
 
 button {
-	@extend %standart-button-style;
+    @extend %standart-button-style;
 }
 
 .toast {
-	@include toast-style(rgba(66, 180, 62, 0.5));
+    @include toast-style(rgba(66, 180, 62, 0.5));
 
-	&.error {
-		@include toast-style(rgb(243, 74, 88, 0.5));
-	}
+    &.error {
+        @include toast-style(rgb(243, 74, 88, 0.5));
+    }
 }
 
 main {
-	display: grid;
-	grid-template-columns: rem(315) auto;
-	column-gap: rem(15);
-	grid-template-rows: repeat(3, auto);
-	grid-template-areas: 'ai mi';
-	margin: rem(20);
+    display: grid;
+    grid-template-columns: rem(315) auto;
+    column-gap: rem(15);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: 'ai mi';
+    margin: rem(20);
 
-	@media (max-width: rem(850)) {
-		row-gap: rem(15);
-		grid-template-columns: 100%;
-		grid-template-areas:
-			'ai'
-			'mi';
-	}
+    @media (max-width: rem(850)) {
+        row-gap: rem(15);
+        grid-template-columns: 100%;
+        grid-template-areas:
+            'ai'
+            'mi';
+    }
 
-	#main-info {
-		display: flex;
-		flex-direction: column;
-		gap: $standart-gap;
-		align-items: center;
+    #main-info {
+        display: flex;
+        flex-direction: column;
+        gap: $standart-gap;
+        align-items: center;
 
-		.topics {
-			display: flex;
-			flex-flow: row wrap;
-			gap: rem(15);
-			justify-content: center;
-			align-items: center;
+        .topics {
+            display: flex;
+            flex-flow: row wrap;
+            gap: rem(15);
+            justify-content: center;
+            align-items: center;
 
-			@media (max-width: rem(850)) {
-				flex-flow: column;
-			}
+            @media (max-width: rem(850)) {
+                flex-flow: column;
+            }
 
-			p {
-				@include fluid-text(21, 18);
-				text-align: justify;
-				margin: 0;
-				line-height: 1.5;
-				hyphens: auto;
-			}
+            p {
+                @include fluid-text(21, 18);
+                text-align: justify;
+                margin: 0;
+                line-height: 1.5;
+                hyphens: auto;
+            }
 
-			figure {
-				margin: 0;
-				@extend %standart-figure-animation;
+            figure {
+                margin: 0;
+                @extend %standart-figure-animation;
 
-				img {
-					width: 100%;
-					box-sizing: border-box;
-					@extend %standart-img-style;
-				}
+                img {
+                    width: 100%;
+                    box-sizing: border-box;
+                    @extend %standart-img-style;
+                }
 
-				figcaption {
-					@include style-figcaption;
-				}
-			}
-		}
+                figcaption {
+                    @include style-figcaption;
+                }
+            }
+        }
 
-		.moover {
-			@include style-moover;
-		}
-	}
+        .moover {
+            @include style-moover;
+        }
+    }
 
-	aside {
-		@include style-aside;
-	}
+    aside {
+        @include style-aside;
+    }
 }
 
 footer {
-	@include style-footer;
+    @include style-footer;
 }

@@ -4,104 +4,104 @@
 @use '../other/variables' as *;
 
 body {
-	@include style-body;
+    @include style-body;
 }
 
 header {
-	@include style-header;
+    @include style-header;
 }
 
 a {
-	@extend %standart-link-style;
+    @extend %standart-link-style;
 }
 
 button {
-	@extend %standart-button-style;
+    @extend %standart-button-style;
 }
 
 .toast {
-	@include toast-style(rgba(66, 180, 62, 0.5));
+    @include toast-style(rgba(66, 180, 62, 0.5));
 
-	&.error {
-		@include toast-style(rgb(243, 74, 88, 0.5));
-	}
+    &.error {
+        @include toast-style(rgb(243, 74, 88, 0.5));
+    }
 }
 
 main {
-	display: grid;
-	grid-template-columns: rem(315) auto;
-	column-gap: rem(15);
-	grid-template-rows: repeat(2, auto);
-	grid-template-areas: 'ai mi';
-	margin: rem(20);
+    display: grid;
+    grid-template-columns: rem(315) auto;
+    column-gap: rem(15);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 'ai mi';
+    margin: rem(20);
 
-	@media (max-width: rem(850)) {
-		grid-template-columns: 100%;
-		grid-template-areas:
-			'ai'
-			'mi';
-	}
+    @media (max-width: rem(850)) {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            'ai'
+            'mi';
+    }
 
-	#main-info {
-		h1 {
-			color: $text-color;
-			@include fluid-text(30, 26);
-			margin-bottom: rem(15);
-			text-align: center;
-		}
+    #main-info {
+        h1 {
+            color: $text-color;
+            @include fluid-text(30, 26);
+            margin-bottom: rem(15);
+            text-align: center;
+        }
 
-		h2 {
-			@include fluid-text(25, 21);
-			text-align: center;
-		}
+        h2 {
+            @include fluid-text(25, 21);
+            text-align: center;
+        }
 
-		.topics {
-			display: flex;
-			flex-flow: column;
-			gap: rem(15);
-			align-items: center;
+        .topics {
+            display: flex;
+            flex-flow: column;
+            gap: rem(15);
+            align-items: center;
 
-			p {
-				@include fluid-text(21, 18);
-				text-align: justify;
-				margin: 0;
-				line-height: 1.5;
-				hyphens: auto;
-			}
+            p {
+                @include fluid-text(21, 18);
+                text-align: justify;
+                margin: 0;
+                line-height: 1.5;
+                hyphens: auto;
+            }
 
-			li {
-				@include fluid-text(21, 18);
-			}
+            li {
+                @include fluid-text(21, 18);
+            }
 
-			iframe {
-				width: rem(800);
-				height: rem(600);
-				@extend %standart-img-style;
-			}
+            iframe {
+                width: rem(800);
+                height: rem(600);
+                @extend %standart-img-style;
+            }
 
-			@media (max-width: rem(1190)) {
-				iframe {
-					width: 100%;
-				}
-			}
+            @media (max-width: rem(1190)) {
+                iframe {
+                    width: 100%;
+                }
+            }
 
-			@media (max-width: rem(850)) {
-				flex-flow: column;
-			}
+            @media (max-width: rem(850)) {
+                flex-flow: column;
+            }
 
-			@media (max-width: rem(495)) {
-				iframe {
-					height: 85vw;
-				}
-			}
-		}
-	}
+            @media (max-width: rem(495)) {
+                iframe {
+                    height: 85vw;
+                }
+            }
+        }
+    }
 
-	aside {
-		@include style-aside;
-	}
+    aside {
+        @include style-aside;
+    }
 }
 
 footer {
-	@include style-footer;
+    @include style-footer;
 }
