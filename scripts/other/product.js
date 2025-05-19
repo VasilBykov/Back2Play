@@ -51,13 +51,13 @@ function renderMainInfo(product) {
             'h3'
         ).innerHTML = `<strong>Цена:</strong> ${price.textContent}`;
         infoContainer.querySelector('ul').innerHTML = `
-			<li><strong>Артикул:</strong> ${art.textContent}</li>
-			<li><strong>Издатель:</strong> ${publisher.textContent}</li>
-			<li><strong>Разработчик:</strong> ${developer.textContent}</li>
-			<li><strong>Поддерживаемые языки:</strong> ${languages.textContent}</li>
-			<li><strong>Тип издания:</strong> ${edition.textContent}</li>
-			<li><strong>Дата релиза:</strong> ${date.textContent}</li>
-		`;
+            <li><strong>Артикул:</strong> ${art.textContent}</li>
+            <li><strong>Издатель:</strong> ${publisher.textContent}</li>
+            <li><strong>Разработчик:</strong> ${developer.textContent}</li>
+            <li><strong>Поддерживаемые языки:</strong> ${languages.textContent}</li>
+            <li><strong>Тип издания:</strong> ${edition.textContent}</li>
+            <li><strong>Дата релиза:</strong> ${date.textContent}</li>
+        `;
     }
 }
 
@@ -139,22 +139,30 @@ function renderRequirements(product) {
     const rec = product.querySelector('requirements > recommended');
 
     const createList = (req) => `
-		<ul>
-			<li><strong>ОС:</strong> ${req.querySelector('os').textContent}</li>
-			<li><strong>Процессор:</strong> ${req.querySelector('cpu').textContent}</li>
-			<li><strong>RAM:</strong> ${req.querySelector('ram').textContent}</li>
-			<li><strong>Видеокарта:</strong> ${req.querySelector('gpu').textContent}</li>
-			<li><strong>DirectX:</strong> ${req.querySelector('directx').textContent}</li>
-		</ul>
-	`;
+        <ul>
+            <li><strong>ОС:</strong> ${req.querySelector('os').textContent}</li>
+            <li><strong>Процессор:</strong> ${
+                req.querySelector('cpu').textContent
+            }</li>
+            <li><strong>RAM:</strong> ${
+                req.querySelector('ram').textContent
+            }</li>
+            <li><strong>Видеокарта:</strong> ${
+                req.querySelector('gpu').textContent
+            }</li>
+            <li><strong>DirectX:</strong> ${
+                req.querySelector('directx').textContent
+            }</li>
+        </ul>
+    `;
 
     reqTab.innerHTML = `
-		<h3>Системные требования</h3>
-		<h4>Минимальные:</h4>
-		${createList(min)}
-		<h4>Рекомендуемые:</h4>
-		${createList(rec)}
-	`;
+        <h3>Системные требования</h3>
+        <h4>Минимальные:</h4>
+        ${createList(min)}
+        <h4>Рекомендуемые:</h4>
+        ${createList(rec)}
+    `;
 }
 
 // Скроллинг миниатюр

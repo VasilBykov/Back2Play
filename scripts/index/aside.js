@@ -41,11 +41,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 const article = document.createElement('article');
                 article.innerHTML = `
-					<a href="/pages/main/product.html?id=${id}">
-						<p>${name}</p>
-						<img src="${cover}" alt="${name}">
-					</a>
-				`;
+                    <a href="/pages/main/product.html?id=${id}">
+                        <p>${name}</p>
+                        <img src="${cover}" alt="${name}">
+                    </a>
+                `;
 
                 container.appendChild(article);
             });
