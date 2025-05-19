@@ -3,7 +3,7 @@
 /* Адаптивный размер шрифта */
 /* Шрифты */
 @font-face {
-  font-family: "light";
+  font-family: light;
   src: url("/fonts/Tektur_l.ttf") format("truetype");
 }
 @font-face {

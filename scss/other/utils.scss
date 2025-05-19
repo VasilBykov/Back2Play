@@ -13,20 +13,18 @@
 /* Адаптивный размер шрифта */
 
 @mixin fluid-text($max: 48, $min: 16) {
-    $maxViewportWidth: 1400;
-    $minViewportWidth: 360;
-
-    $maxSize: math.div($max, 16);
-    $minSize: math.div($min, 16);
-    $maxWidth: math.div($maxViewportWidth, 16);
-    $minWidth: math.div($minViewportWidth, 16);
-
-    $slope: math.div(($maxSize - $minSize), ($maxWidth - $minWidth));
-    $yAxisIntersection: -$minWidth * $slope + $minSize;
+    $max-viewport-width: 1400;
+    $min-viewport-width: 360;
+    $max-size: math.div($max, 16);
+    $min-size: math.div($min, 16);
+    $max-width: math.div($max-viewport-width, 16);
+    $min-width: math.div($min-viewport-width, 16);
+    $slope: math.div(($max-size - $min-size), ($max-width - $min-width));
+    $y-axis-intersection: -$min-width * $slope + $min-size;
 
     font-size: clamp(
-        #{$minSize * 1rem},
-        #{$yAxisIntersection * 1rem} + #{$slope * 100vw},
-        #{$maxSize * 1rem}
+        #{$min-size * 1rem},
+        #{$y-axis-intersection * 1rem} + #{$slope * 100vw},
+        #{$max-size * 1rem}
     );
 }

@@ -35,7 +35,7 @@ main {
     grid-template-areas: 'ai mi';
     margin: rem(20);
 
-    @media (max-width: rem(850)) {
+    @media (width <= rem(850)) {
         grid-template-columns: 100%;
         grid-template-areas:
             'ai'
@@ -45,13 +45,16 @@ main {
     #main-info {
         h1 {
             color: $text-color;
+
             @include fluid-text(30, 26);
+
             margin-bottom: rem(15);
             text-align: center;
         }
 
         h2 {
             @include fluid-text(25, 21);
+
             text-align: center;
         }
 
@@ -63,6 +66,7 @@ main {
 
             p {
                 @include fluid-text(21, 18);
+
                 text-align: justify;
                 margin: 0;
                 line-height: 1.5;
@@ -76,20 +80,21 @@ main {
             iframe {
                 width: rem(800);
                 height: rem(600);
+
                 @extend %standart-img-style;
             }
 
-            @media (max-width: rem(1190)) {
+            @media (width <= rem(1190)) {
                 iframe {
                     width: 100%;
                 }
             }
 
-            @media (max-width: rem(850)) {
+            @media (width <= rem(850)) {
                 flex-flow: column;
             }
 
-            @media (max-width: rem(495)) {
+            @media (width <= rem(495)) {
                 iframe {
                     height: 85vw;
                 }

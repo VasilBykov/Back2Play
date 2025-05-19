@@ -1,3 +1,4 @@
+@use 'sass:color';
 @use 'variables.scss' as *;
 @use 'placeholder.scss' as *;
 @use 'utils.scss' as *;
@@ -8,22 +9,16 @@
     margin: 0;
     padding: 0;
     min-width: rem(343);
-
     color: $text-color;
     font-family: $main-font;
     hyphens: auto;
-
-    background: linear-gradient(
-            to bottom,
-            rgb(245, 245, 245),
-            rgb(230, 230, 230)
-        ),
+    background: linear-gradient(to bottom, rgb(245 245 245), rgb(230 230 230)),
         repeating-linear-gradient(
             to bottom,
-            rgba(255, 255, 255, 0.8) 0,
-            rgba(255, 255, 255, 0.8) rem(2),
-            rgba(0, 0, 0, 0.05) rem(2),
-            rgba(0, 0, 0, 0.05) rem(4)
+            rgb(255 255 255 / 80%) 0,
+            rgb(255 255 255 / 80%) rem(2),
+            rgb(0 0 0 / 5%) rem(2),
+            rgb(0 0 0 / 5%) rem(4)
         );
     background-size: 100% rem(2), 100% 100%;
     background-blend-mode: overlay;
@@ -35,6 +30,7 @@
     align-items: center;
     justify-content: center;
     gap: $standart-gap;
+
     @include fluid-text(21, 17);
 
     min-height: rem(70);
@@ -52,6 +48,7 @@
 
         &:hover {
             @extend %blurred;
+
             box-shadow: $box-shadow-hover;
         }
 
@@ -64,7 +61,9 @@
         img {
             width: 100%;
             height: 100%;
+
             @extend %blurred;
+
             box-shadow: $standart-box-shadow, $standart-box-shadow-d;
         }
     }
@@ -82,7 +81,9 @@
         flex-grow: 1;
         height: 100%;
         border-radius: $standart-border-radius;
+
         @extend %blurred;
+
         box-shadow: $standart-box-shadow, $standart-box-shadow-d;
 
         ul {
@@ -118,6 +119,7 @@
 
                     &:hover {
                         @extend %blurred;
+
                         box-shadow: $box-shadow-hover;
                     }
 
@@ -131,7 +133,7 @@
         }
     }
 
-    @media (max-width: rem(1295)) {
+    @media (width <= rem(1295)) {
         nav {
             ul {
                 gap: rem(5);
@@ -139,7 +141,7 @@
         }
     }
 
-    @media (max-width: rem(955)) {
+    @media (width <= rem(955)) {
         nav {
             ul {
                 li {
@@ -151,7 +153,7 @@
         }
     }
 
-    @media (max-width: rem(850)) {
+    @media (width <= rem(850)) {
         flex-direction: column;
         height: 100%;
 
@@ -193,7 +195,6 @@
                         height: 8vh;
                         padding: rem(8);
                         backdrop-filter: $blur;
-                        -webkit-backdrop-filter: $blur;
                         box-shadow: $box-shadow-hover;
                     }
                 }
@@ -208,9 +209,22 @@
     height: auto;
     padding: $standart-gap;
     border-radius: $standart-border-radius;
+
     @extend %blurred;
+
     box-shadow: $standart-box-shadow, $standart-box-shadow-d;
     font-size: rem(18);
+
+    h4 {
+        text-align: center;
+        margin-bottom: $standart-gap;
+        text-shadow: $standart-text-shadow;
+    }
+
+    p {
+        margin: 0;
+        width: 100%;
+    }
 
     #subscribe-form {
         display: flex;
@@ -264,6 +278,7 @@
             background: $gradient-btn;
             box-shadow: $standart-box-shadow, $standart-box-shadow-d;
             text-shadow: $standart-text-shadow-d;
+
             @include transition-all(0.3s ease-in-out);
 
             &:hover {
@@ -297,11 +312,13 @@
             border-radius: $standart-border-radius;
             background: $gradient-btn;
             box-shadow: $standart-box-shadow, $standart-box-shadow-d;
+
             @include transition-all(0.3s ease-in-out);
 
             &:hover {
-                border-color: lighten($link-color, 15%);
-                box-shadow: rem(0) rem(4) rem(10) lighten($link-color, 30%),
+                border-color: color.adjust($link-color, $lightness: 15%);
+                box-shadow: rem(0) rem(4) rem(10)
+                        color.adjust($link-color, $lightness: 30%),
                     $standart-box-shadow-d;
                 transform: scale(1.05);
             }
@@ -311,6 +328,7 @@
                 min-height: rem(25);
                 max-width: 100%;
                 max-height: 100%;
+
                 @extend %standart-img-style;
             }
 
@@ -356,8 +374,10 @@
     box-sizing: border-box;
     border-radius: $standart-border-radius;
     color: $text-color;
+
     @include fluid-text(18, 16);
     @extend %blurred;
+
     box-shadow: $standart-box-shadow, $standart-box-shadow-d;
 
     p {
@@ -376,7 +396,7 @@
         align-items: center;
     }
 
-    @media (max-width: rem(815)) {
+    @media (width <= rem(815)) {
         height: auto;
         flex-direction: column;
         gap: $standart-gap;
@@ -404,10 +424,10 @@
 
         @include gradient-bg(
             rgb(255, 255, 255),
-            lighten($background-elements-color, 20%)
+            color.adjust($background-elements-color, $lightness: 20%)
         );
-        box-shadow: $standart-box-shadow, $standart-box-shadow-d;
 
+        box-shadow: $standart-box-shadow, $standart-box-shadow-d;
         color: $text-color;
         text-shadow: $standart-text-shadow-d;
 
@@ -415,15 +435,17 @@
 
         &:hover {
             @extend %hover-box-shadow;
+
             background: $gradient-btn-hover;
         }
 
         &:active {
             @extend %active-box-shadow;
             @include gradient-bg(
-                darken($background-elements-color, 10%),
-                darken($background-elements-color, 20%)
+                color.adjust($background-elements-color, $lightness: -10%),
+                color.adjust($background-elements-color, $lightness: -20%)
             );
+
             transform: $standart-transform;
         }
     }
@@ -434,12 +456,16 @@
     box-sizing: border-box;
     border: $light-border;
     border-radius: $standart-border-radius;
+
     @extend %blurred;
+
     box-shadow: $standart-box-shadow, $standart-box-shadow-d;
+
     @include transition-all(0.3s);
 
     &:active {
         @extend %hover-box-shadow;
+
         transform: scale(0.98);
     }
 
@@ -453,7 +479,7 @@
             transition: color 0.2s;
 
             &:hover {
-                color: lighten($link-color, 15%);
+                color: color.adjust($link-color, $lightness: 15%);
             }
         }
     }
@@ -475,24 +501,23 @@
     border: none;
     border-radius: $standart-border-radius;
     z-index: 1000;
-
     text-align: center;
+
     @include fluid-text(21, 18);
-    color: rgba(0, 0, 0);
+
+    color: rgb(0 0 0);
     font-family: $main-font;
     text-shadow: $standart-text-shadow-d;
-
     background: linear-gradient(
         135deg,
-        lighten($bg-color, 5%),
-        lighten($bg-color, 25%)
+        color.adjust($bg-color, $lightness: 5%),
+        color.adjust($bg-color, $lightness: 25%)
     );
-
     box-shadow: $standart-box-shadow, $standart-box-shadow-d;
-
     backdrop-filter: blur(rem(10));
-    -webkit-backdrop-filter: blur(rem(10));
+
     @include transition-all(0.3s);
+
     animation: fade-in 0.3s ease-in-out;
 
     @media (max-width: rem(850)) {

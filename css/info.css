@@ -3,7 +3,7 @@
 /* Адаптивный размер шрифта */
 /* Шрифты */
 @font-face {
-  font-family: "light";
+  font-family: light;
   src: url("/fonts/Tektur_l.ttf") format("truetype");
 }
 @font-face {
@@ -49,15 +49,16 @@ button {
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 0.28125rem;
-  font-family: "medium", Tahoma;
+  font-family: "medium", tahoma;
   font-size: 1.125rem;
   color: rgb(45, 45, 45);
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
   background: linear-gradient(135deg, white, #e8e8e8);
   -webkit-box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1), inset -0.0625rem -0.0625rem 0.125rem rgba(255, 255, 255, 0.6);
           box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1), inset -0.0625rem -0.0625rem 0.125rem rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
@@ -76,8 +77,9 @@ button:active {
 
 /* Вспомогательные */
 header #logo:hover, header #logo img, header nav, header nav ul li a:hover, main aside, footer {
-  backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
 }
 
 /* Основные */
@@ -87,7 +89,7 @@ body {
   padding: 0;
   min-width: 21.4375rem;
   color: rgb(45, 45, 45);
-  font-family: "medium", Tahoma;
+  font-family: "medium", tahoma;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
@@ -245,17 +247,17 @@ header nav ul li a:active {
   -webkit-transform: translateY(0.0625rem);
           transform: translateY(0.0625rem);
 }
-@media (max-width: 80.9375rem) {
+@media (width <= 80.9375rem) {
   header nav ul {
     gap: 0.3125rem;
   }
 }
-@media (max-width: 59.6875rem) {
+@media (width <= 59.6875rem) {
   header nav ul li a {
     padding: 0.3125rem;
   }
 }
-@media (max-width: 53.125rem) {
+@media (width <= 53.125rem) {
   header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -311,8 +313,9 @@ header nav ul li a:active {
     width: 100%;
     height: 8vh;
     padding: 0.5rem;
-    backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px);
+            backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
     -webkit-box-shadow: 0rem 0.125rem 0.3125rem #797979, inset -0.125rem -0.125rem 0.1875rem rgba(255, 255, 255, 0.8);
             box-shadow: 0rem 0.125rem 0.3125rem #797979, inset -0.125rem -0.125rem 0.1875rem rgba(255, 255, 255, 0.8);
   }
@@ -330,19 +333,20 @@ header nav ul li a:active {
   text-align: center;
   font-size: clamp(1.125rem, 1.0600961538rem + 0.2884615385vw, 1.3125rem);
   color: rgb(0, 0, 0);
-  font-family: "medium", Tahoma;
+  font-family: "medium", tahoma;
   text-shadow: 0.0625rem 0.0625rem 0.1875rem rgba(0, 0, 0, 0.2);
   background: linear-gradient(135deg, rgba(79, 193, 75, 0.5), rgba(153, 219, 150, 0.5));
   -webkit-box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1), inset -0.125rem -0.125rem 0.25rem rgba(255, 255, 255, 0.5);
           box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1), inset -0.125rem -0.125rem 0.25rem rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(0.625rem);
   -webkit-backdrop-filter: blur(0.625rem);
+          backdrop-filter: blur(0.625rem);
+  backdrop-filter: blur(0.625rem);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-animation: fade-in 0.3s ease-in-out;
           animation: fade-in 0.3s ease-in-out;
 }
-@media (max-width: 53.125rem) {
+@media (width <= 53.125rem) {
   .toast {
     bottom: 0.9375rem;
     left: 50%;
@@ -363,19 +367,20 @@ header nav ul li a:active {
   text-align: center;
   font-size: clamp(1.125rem, 1.0600961538rem + 0.2884615385vw, 1.3125rem);
   color: rgb(0, 0, 0);
-  font-family: "medium", Tahoma;
+  font-family: "medium", tahoma;
   text-shadow: 0.0625rem 0.0625rem 0.1875rem rgba(0, 0, 0, 0.2);
   background: linear-gradient(135deg, rgba(245, 98, 110, 0.5), rgba(251, 194, 198, 0.5));
   -webkit-box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1), inset -0.125rem -0.125rem 0.25rem rgba(255, 255, 255, 0.5);
           box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1), inset -0.125rem -0.125rem 0.25rem rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(0.625rem);
   -webkit-backdrop-filter: blur(0.625rem);
+          backdrop-filter: blur(0.625rem);
+  backdrop-filter: blur(0.625rem);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   -webkit-animation: fade-in 0.3s ease-in-out;
           animation: fade-in 0.3s ease-in-out;
 }
-@media (max-width: 53.125rem) {
+@media (width <= 53.125rem) {
   .toast.error {
     bottom: 0.9375rem;
     left: 50%;
@@ -395,7 +400,7 @@ main {
   grid-template-areas: "ai mi";
   margin: 1.25rem;
 }
-@media (max-width: 53.125rem) {
+@media (width <= 53.125rem) {
   main {
     grid-template-columns: 100%;
     grid-template-areas: "ai" "mi";
@@ -440,12 +445,12 @@ main #main-info .topics iframe {
   width: 50rem;
   height: 37.5rem;
 }
-@media (max-width: 74.375rem) {
+@media (width <= 74.375rem) {
   main #main-info .topics iframe {
     width: 100%;
   }
 }
-@media (max-width: 53.125rem) {
+@media (width <= 53.125rem) {
   main #main-info .topics {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -453,7 +458,7 @@ main #main-info .topics iframe {
             flex-flow: column;
   }
 }
-@media (max-width: 30.9375rem) {
+@media (width <= 30.9375rem) {
   main #main-info .topics iframe {
     height: 85vw;
   }
@@ -526,7 +531,7 @@ main aside #subscribe-form p label input {
   border-radius: 0.28125rem;
   -webkit-box-shadow: inset 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
           box-shadow: inset 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
-  font-family: "medium", Tahoma;
+  font-family: "medium", tahoma;
   font-size: 1rem;
 }
 main aside #subscribe-form button {
@@ -672,7 +677,7 @@ footer div {
       -ms-flex-align: center;
           align-items: center;
 }
-@media (max-width: 50.9375rem) {
+@media (width <= 50.9375rem) {
   footer {
     height: auto;
     -webkit-box-orient: vertical;

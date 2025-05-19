@@ -1,9 +1,10 @@
 @use 'utils.scss' as *;
+@use 'sass:color';
 
 /* Шрифты */
 
 @font-face {
-    font-family: 'light';
+    font-family: light;
     src: url('/fonts/Tektur_l.ttf') format('truetype');
 }
 
@@ -17,80 +18,65 @@
     src: url('/fonts/Tektur_b.ttf') format('truetype');
 }
 
-$main-font: 'medium', Tahoma;
+$main-font: 'medium', tahoma;
 
 /* Цвета */
 
-$text-color: rgb(45, 45, 45);
-
-$link-color: rgb(70, 70, 70);
-
-$link-click-color: rgb(35, 45, 65);
-
-$background-elements-color: rgb(245, 245, 245);
-
-$background-elements-color-d: rgba(250, 250, 250);
+$text-color: rgb(45 45 45);
+$link-color: rgb(70 70 70);
+$link-click-color: rgb(35 45 65);
+$background-elements-color: rgb(245 245 245);
+$background-elements-color-d: rgb(250 250 250);
 
 /* Размеры и отступы */
 
 $standart-border-radius: rem(4.5);
-
 $standart-gap: rem(10);
 
 /* Тени и эффекты */
 
-$light-border: 1px solid lighten($background-elements-color, 15%);
-
-$standart-box-shadow: 0 rem(4) rem(6) rgba(0, 0, 0, 0.1);
-
-$inner-white-shadow: inset rem(-1) rem(-1) rem(2) rgba(255, 255, 255, 0.6);
-
-$standart-box-shadow-d: inset rem(-2) rem(-2) rem(4) rgba(255, 255, 255, 0.5);
-
-$standart-text-shadow: rem(1) rem(1) rem(2) rgba(255, 255, 255, 0.8);
-
-$standart-text-shadow-d: rem(1) rem(1) rem(3) rgba(0, 0, 0, 0.2);
-
-$hover-shadow-button: rem(0) rem(2) rem(5) lighten($link-color, 20%),
-    inset rem(-2) rem(-2) rem(3) rgba(255, 255, 255, 0.8);
-
-$active-shadow-button: inset rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.4),
-    rem(1) rem(1) rem(2) rgba(255, 255, 255, 0.3);
-
-$box-shadow-hover: rem(0) rem(2) rem(5) lighten($link-color, 20%),
-    inset rem(-2) rem(-2) rem(3) rgba(255, 255, 255, 0.8);
-
-$box-shadow-active: inset rem(2) rem(2) rem(4) rgba(0, 0, 0, 0.4),
-    rem(1) rem(1) rem(2) rgba(255, 255, 255, 0.3);
+$light-border: 1px solid
+    color.adjust($background-elements-color, $lightness: 15%);
+$standart-box-shadow: 0 rem(4) rem(6) rgb(0 0 0 / 10%);
+$inner-white-shadow: inset rem(-1) rem(-1) rem(2) rgb(255 255 255 / 60%);
+$standart-box-shadow-d: inset rem(-2) rem(-2) rem(4) rgb(255 255 255 / 50%);
+$standart-text-shadow: rem(1) rem(1) rem(2) rgb(255 255 255 / 80%);
+$standart-text-shadow-d: rem(1) rem(1) rem(3) rgb(0 0 0 / 20%);
+$hover-shadow-button: rem(0) rem(2) rem(5)
+        color.adjust($link-color, $lightness: 20%),
+    inset rem(-2) rem(-2) rem(3) rgb(255 255 255 / 80%);
+$active-shadow-button: inset rem(2) rem(2) rem(4) rgb(0 0 0 / 40%),
+    rem(1) rem(1) rem(2) rgb(255 255 255 / 30%);
+$box-shadow-hover: rem(0) rem(2) rem(5)
+        color.adjust($link-color, $lightness: 20%),
+    inset rem(-2) rem(-2) rem(3) rgb(255 255 255 / 80%);
+$box-shadow-active: inset rem(2) rem(2) rem(4) rgb(0 0 0 / 40%),
+    rem(1) rem(1) rem(2) rgb(255 255 255 / 30%);
 
 /* Градиенты */
 
 $gradient-btn: linear-gradient(
     135deg,
-    lighten($background-elements-color, 20%),
-    darken($background-elements-color, 5%)
+    color.adjust($background-elements-color, $lightness: 20%),
+    color.adjust($background-elements-color, $lightness: -5%)
 );
-
 $gradient-btn-hover: linear-gradient(
     135deg,
-    lighten($background-elements-color, 30%),
-    lighten($background-elements-color, 10%)
+    color.adjust($background-elements-color, $lightness: 30%),
+    color.adjust($background-elements-color, $lightness: 10%)
 );
-
 $gradient-active: linear-gradient(
     135deg,
-    darken($background-elements-color, 10%),
-    darken($background-elements-color, 20%)
+    color.adjust($background-elements-color, $lightness: -10%),
+    color.adjust($background-elements-color, $lightness: -20%)
 );
 
 /* Переходы */
 
 $transition-fast: all 0.1s ease-in-out;
-
 $transition-default: all 0.3s ease-in-out;
 
 /* Эффекты элементов */
 
 $blur: blur(1px);
-
 $standart-transform: translateY(rem(1));

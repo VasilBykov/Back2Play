@@ -1,3 +1,4 @@
+@use 'sass:color';
 @use 'variables.scss' as *;
 @use 'utils.scss' as *;
 
@@ -27,8 +28,8 @@
     transition: $transition-default;
 
     &:hover {
-        box-shadow: 0px 4px 10px lighten($link-color, 30%),
-            inset -1px -1px 3px rgba(255, 255, 255, 0.8);
+        box-shadow: 0 4px 10px color.adjust($link-color, $lightness: 30%),
+            inset -1px -1px 3px rgb(255 255 255 / 80%);
         transform: scale(1.05);
     }
 }
@@ -41,11 +42,10 @@
     font-family: $main-font;
     font-size: rem(18);
     color: $text-color;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 3px rgb(0 0 0 / 20%);
     background: $gradient-btn;
     box-shadow: $standart-box-shadow, $inner-white-shadow;
     backdrop-filter: $blur;
-    -webkit-backdrop-filter: $blur;
     transition: $transition-fast;
 
     &:hover {
@@ -70,18 +70,17 @@
     font-family: $main-font;
     color: $text-color;
     backdrop-filter: $blur;
-    -webkit-backdrop-filter: $blur;
     transition: $transition-fast;
 
     &:hover {
-        background: rgba(0, 0, 0, 0.15);
-        color: rgba(255, 255, 255, 0.85);
+        background: rgb(0 0 0 / 15%);
+        color: rgb(255 255 255 / 85%);
     }
 
     &:active {
-        background: rgba(0, 0, 0, 0.4);
-        box-shadow: inset -3px 0px 4px rgba(0, 0, 0, 0.4),
-            inset 3px 0px 4px rgba(0, 0, 0, 0.4);
+        background: rgb(0 0 0 / 40%);
+        box-shadow: inset -3px 0 4px rgb(0 0 0 / 40%),
+            inset 3px 0 4px rgb(0 0 0 / 40%);
     }
 }
 
@@ -89,7 +88,6 @@
     border: $light-border;
     border-radius: $standart-border-radius;
     backdrop-filter: $blur;
-    -webkit-backdrop-filter: $blur;
     box-shadow: $standart-box-shadow, $inner-white-shadow;
     transition: $transition-default;
 }
@@ -98,7 +96,6 @@
 
 %blurred {
     backdrop-filter: $blur;
-    -webkit-backdrop-filter: $blur;
 }
 
 %hover-box-shadow {

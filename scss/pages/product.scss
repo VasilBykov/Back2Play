@@ -43,7 +43,7 @@ main {
         flex-direction: row;
         gap: rem(50);
 
-        @media (max-width: rem(1235)) {
+        @media (width <= rem(1235)) {
             flex-direction: column;
             gap: $standart-gap;
             width: 100%;
@@ -55,6 +55,7 @@ main {
             gap: $standart-gap;
             width: rem(235);
             height: rem(575);
+
             @extend %styled-box;
 
             button {
@@ -72,7 +73,7 @@ main {
                 }
             }
 
-            @media (max-width: rem(1505)) {
+            @media (width <= rem(1505)) {
                 display: none;
             }
         }
@@ -82,6 +83,7 @@ main {
             flex-direction: column;
             gap: $standart-gap;
             height: rem(575);
+
             @extend %styled-box;
 
             #main-image {
@@ -91,6 +93,7 @@ main {
                 align-items: center;
                 overflow: hidden;
                 box-sizing: border-box;
+
                 @extend %standart-img-style;
 
                 img {
@@ -113,7 +116,7 @@ main {
                 }
             }
 
-            @media (max-width: rem(650)) {
+            @media (width <= rem(650)) {
                 height: rem(275);
 
                 #main-image img {
@@ -130,20 +133,24 @@ main {
             justify-content: center;
             padding: rem(15);
             box-sizing: border-box;
+
             @extend %styled-box;
 
             h2 {
                 margin: rem(18);
+
                 @include fluid-text(29, 25);
             }
 
             h3 {
                 margin: rem(10);
+
                 @include fluid-text(27, 23);
             }
 
             h4 {
                 margin: rem(15);
+
                 @include fluid-text(23, 19);
             }
 
@@ -159,10 +166,11 @@ main {
             p {
                 text-align: center;
                 margin-bottom: 0;
+
                 @include fluid-text(16, 12);
             }
 
-            @media (max-width: rem(1235)) {
+            @media (width <= rem(1235)) {
                 width: 100%;
                 gap: 0;
 
@@ -171,7 +179,7 @@ main {
                 }
             }
 
-            @media (max-width: rem(725)) {
+            @media (width <= rem(725)) {
                 button {
                     width: 100%;
                 }
@@ -187,7 +195,7 @@ main {
             flex-direction: row;
             gap: $standart-gap;
 
-            @media (max-width: rem(935)) {
+            @media (width <= rem(935)) {
                 gap: $standart-gap;
                 flex-direction: column;
             }
@@ -198,6 +206,7 @@ main {
                 width: rem(255);
                 gap: $standart-gap;
                 box-sizing: border-box;
+
                 @extend %styled-box;
 
                 button:first-child {
@@ -208,7 +217,7 @@ main {
                     margin-bottom: $standart-gap;
                 }
 
-                @media (max-width: rem(935)) {
+                @media (width <= rem(935)) {
                     flex-direction: column;
                     width: 100%;
                 }
@@ -222,6 +231,7 @@ main {
                 padding-left: rem(25);
                 padding-right: rem(25);
                 box-sizing: border-box;
+
                 @extend %styled-box;
 
                 h3 {
@@ -250,7 +260,7 @@ main {
                     }
                 }
 
-                @media (max-width: rem(935)) {
+                @media (width <= rem(935)) {
                     width: 100%;
                     padding-left: rem(15);
                     padding-right: rem(15);

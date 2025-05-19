@@ -29,13 +29,14 @@ button {
 
 main {
     display: grid;
+    // stylelint-disable-next-line declaration-block-no-redundant-longhand-properties
     grid-template-columns: rem(315) auto;
-    column-gap: rem(15);
     grid-template-rows: repeat(3, auto);
     grid-template-areas: 'ai mi';
+    column-gap: rem(15);
     margin: rem(20);
 
-    @media (max-width: rem(850)) {
+    @media (width <= rem(850)) {
         row-gap: rem(15);
         grid-template-columns: 100%;
         grid-template-areas:
@@ -56,12 +57,13 @@ main {
             justify-content: center;
             align-items: center;
 
-            @media (max-width: rem(850)) {
+            @media (width <= rem(850)) {
                 flex-flow: column;
             }
 
             p {
                 @include fluid-text(21, 18);
+
                 text-align: justify;
                 margin: 0;
                 line-height: 1.5;
@@ -70,11 +72,13 @@ main {
 
             figure {
                 margin: 0;
+
                 @extend %standart-figure-animation;
 
                 img {
                     width: 100%;
                     box-sizing: border-box;
+
                     @extend %standart-img-style;
                 }
 
