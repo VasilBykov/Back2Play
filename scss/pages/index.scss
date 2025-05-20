@@ -29,13 +29,12 @@ button {
 
 main {
     display: grid;
-    grid-template-columns: rem(315) auto;
     gap: rem(15);
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas:
+    grid-template:
         'mp mp'
         'ai mi'
-        'ai mi';
+        'ai mi'
+        / rem(315) auto;
     margin: rem(20);
 
     @media (width <= rem(850)) {
@@ -57,6 +56,18 @@ main {
         @media (height <= rem(615)) {
             min-height: rem(200);
             height: 50vh;
+        }
+
+        h1 {
+            @include fluid-text(36, 23);
+
+            margin-bottom: rem(25);
+        }
+
+        p {
+            @include fluid-text(21, 16);
+
+            margin-bottom: rem(25);
         }
 
         .banner-container {
@@ -86,18 +97,6 @@ main {
                 transform: translateY(-50%);
                 color: white;
                 user-select: none;
-
-                h1 {
-                    @include fluid-text(36, 23);
-
-                    margin-bottom: rem(25);
-                }
-
-                p {
-                    @include fluid-text(21, 16);
-
-                    margin-bottom: rem(25);
-                }
             }
 
             .banner-btn {

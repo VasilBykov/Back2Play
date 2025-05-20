@@ -29,10 +29,8 @@ button {
 
 main {
     display: grid;
-    grid-template-columns: rem(315) auto;
+    grid-template: 'ai mi' auto / rem(315) auto;
     column-gap: rem(15);
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: 'ai mi';
     margin: rem(20);
 
     @media (width <= rem(850)) {

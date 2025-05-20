@@ -222,8 +222,9 @@
     }
 
     p {
-        margin: 0;
-        width: 100%;
+        margin: $standart-gap;
+        font-size: rem(16);
+        text-shadow: $standart-text-shadow;
     }
 
     #subscribe-form {
@@ -294,21 +295,18 @@
         }
     }
 
-    div {
+    #content-block {
+        display: flex;
+        flex-direction: column;
+        gap: $standart-gap;
         margin-top: rem(20);
         text-align: center;
 
-        h4 {
-            margin-bottom: $standart-gap;
-            text-shadow: $standart-text-shadow;
-        }
-
         a {
             display: flex;
-            flex-flow: column wrap;
+            flex-flow: column;
             align-items: center;
             padding: $standart-gap;
-            margin-bottom: $standart-gap;
             border-radius: $standart-border-radius;
             background: $gradient-btn;
             box-shadow: $standart-box-shadow, $standart-box-shadow-d;
@@ -335,16 +333,6 @@
             .icon {
                 @extend %standart-icon-style;
             }
-
-            p {
-                margin: $standart-gap;
-                font-size: rem(16);
-                text-shadow: $standart-text-shadow;
-            }
-        }
-
-        article:last-child {
-            margin: 0;
         }
 
         .art-link {
@@ -520,7 +508,7 @@
 
     animation: fade-in 0.3s ease-in-out;
 
-    @media (max-width: rem(850)) {
+    @media (width <= rem(850)) {
         bottom: rem(15);
         left: 50%;
         right: auto;

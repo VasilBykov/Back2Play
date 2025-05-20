@@ -29,10 +29,7 @@ button {
 
 main {
     display: grid;
-    // stylelint-disable-next-line declaration-block-no-redundant-longhand-properties
-    grid-template-columns: rem(315) auto;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: 'ai mi';
+    grid-template: 'ai mi' auto / rem(315) auto;
     column-gap: rem(15);
     margin: rem(20);
 

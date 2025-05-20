@@ -35,7 +35,7 @@ $standart-gap: rem(10);
 
 /* Тени и эффекты */
 
-$light-border: 1px solid
+$light-border: rem(1) solid
     color.adjust($background-elements-color, $lightness: 15%);
 $standart-box-shadow: 0 rem(4) rem(6) rgb(0 0 0 / 10%);
 $inner-white-shadow: inset rem(-1) rem(-1) rem(2) rgb(255 255 255 / 60%);
@@ -78,5 +78,5 @@ $transition-default: all 0.3s ease-in-out;
 
 /* Эффекты элементов */
 
-$blur: blur(1px);
+$blur: blur(rem(1));
 $standart-transform: translateY(rem(1));

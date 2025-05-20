@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const container = document.querySelector('#aside-info div > div');
+    const container = document.querySelector('#content-block');
     if (!container) {
         console.error('Контейнер для вывода продуктов не был найден!');
         return;

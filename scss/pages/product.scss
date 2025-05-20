@@ -58,7 +58,7 @@ main {
 
             @extend %styled-box;
 
-            button {
+            #bottom-btn {
                 width: 100%;
             }
 
@@ -209,11 +209,11 @@ main {
 
                 @extend %styled-box;
 
-                button:first-child {
+                #first-nav-btn {
                     margin-top: $standart-gap;
                 }
 
-                button:last-child {
+                #last-nav-btn {
                     margin-bottom: $standart-gap;
                 }
 
