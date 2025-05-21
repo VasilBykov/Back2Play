@@ -6,7 +6,7 @@
 
 %standart-link-style {
     text-decoration: none;
-    color: $link-color;
+    color: $text-color;
 }
 
 %standart-img-style {
@@ -18,8 +18,8 @@
 }
 
 %standart-icon-style {
-    max-width: rem(20);
-    max-height: rem(20);
+    width: rem(25);
+    height: rem(25);
     border: none;
     box-shadow: none;
 }

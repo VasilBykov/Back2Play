@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Back2Play</title>
-        <link rel="icon" href="/images/icons/laptop.ico" type="image/x-icon" />
+        <link rel="icon" href="/images/icons/main.ico" type="image/x-icon" />
         <link rel="stylesheet" href="/css/product.css" />
     </head>
 
@@ -12,7 +12,7 @@
         <header>
             <a href="/pages/main/index.html" id="logo">
                 <img
-                    src="/images/index/logo/Back2Play_black.svg"
+                    src="/images/index/logo/Back2Play.svg"
                     alt="Логотип Back2Play"
                 />
             </a>
@@ -22,7 +22,10 @@
                 aria-expanded="false"
                 aria-controls="menu"
             >
-                <img src="/images/icons/bag.svg" alt="Иконка меню-бургер" />
+                <object
+                    type="image/svg+xml"
+                    data="/images/icons/burger.svg"
+                ></object>
                 Навигация по сайту
             </button>
 
@@ -57,10 +60,10 @@
             <section id="product-top">
                 <div id="thumbnail">
                     <button id="up-btn">
-                        <img
-                            src="/images/icons/plane.svg"
-                            alt="Иконка самолета, действие вверх"
-                        />
+                        <object
+                            type="image/svg+xml"
+                            data="/images/icons/up.svg"
+                        ></object>
                     </button>
 
                     <div id="thumbnail-column">
@@ -68,10 +71,10 @@
                     </div>
 
                     <button id="bottom-btn">
-                        <img
-                            src="/images/icons/car.svg"
-                            alt="Иконка машинки, действие вниз"
-                        />
+                        <object
+                            type="image/svg+xml"
+                            data="/images/icons/down.svg"
+                        ></object>
                     </button>
                 </div>
 
@@ -82,16 +85,16 @@
 
                     <div id="bottom-button">
                         <button id="prev-btn">
-                            <img
-                                src="/images/icons/left.svg"
-                                alt="Иконка - лево"
-                            />
+                            <object
+                                type="image/svg+xml"
+                                data="/images/icons/left.svg"
+                            ></object>
                         </button>
                         <button id="next-btn">
-                            <img
-                                src="/images/icons/right.svg"
-                                alt="Иконка - право"
-                            />
+                            <object
+                                type="image/svg+xml"
+                                data="/images/icons/right.svg"
+                            ></object>
                         </button>
                     </div>
                 </div>
@@ -105,7 +108,9 @@
                         <!-- Цена товара - подставляется из XML через JS: product.js -->
                     </h3>
 
-                    <button>Оставить заявку на приобритение*</button>
+                    <button id="buy-me-btn">
+                        Оставить заявку на приобритение*
+                    </button>
 
                     <h4>Краткое описание:</h4>
 
@@ -148,20 +153,18 @@
 
         <footer>
             <div id="end">
-                <img
-                    src="/images/icons/heart_l.svg"
-                    class="icon"
-                    alt="Иконка сердечка"
-                />
+                <object
+                    type="image/svg+xml"
+                    data="/images/icons/heart.svg"
+                ></object>
                 <p>Back2Play&#169; - Все права защищены</p>
             </div>
 
             <div id="contact">
-                <img
-                    src="/images/icons/phone.svg"
-                    class="icon"
-                    alt="Иконка телефона"
-                />
+                <object
+                    type="image/svg+xml"
+                    data="/images/icons/mail.svg"
+                ></object>
                 <p>Номер телефона: +375 (29) 229-42-29</p>
             </div>
         </footer>
