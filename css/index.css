@@ -429,7 +429,7 @@ header nav ul li a:active {
 main {
   display: grid;
   gap: 0.9375rem;
-  grid-template: "mp mp" "ai mi" "ai mi"/19.6875rem auto;
+  grid-template: "mp mp" "ai mi" "ai mi" "nw nw"/19.6875rem auto;
   margin: 1.25rem;
 }
 @media (width <= 53.125rem) {
@@ -624,6 +624,31 @@ main #main-info .topics figure figcaption .price {
             box-sizing: border-box;
     width: 100%;
   }
+}
+main #news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main #news div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 main #aside-info {
   -webkit-box-sizing: border-box;
