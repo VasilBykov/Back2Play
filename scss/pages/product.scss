@@ -86,7 +86,8 @@ main {
 
                 img {
                     width: 100%;
-                    max-height: rem(125);
+                    min-height: rem(145);
+                    max-height: rem(145);
                     box-sizing: border-box;
 
                     @extend %standart-img-style;
@@ -150,6 +151,7 @@ main {
             justify-content: center;
             padding: rem(15);
             box-sizing: border-box;
+            width: rem(615);
 
             @extend %styled-box;
 
@@ -304,6 +306,20 @@ main {
                     }
                 }
             }
+        }
+    }
+
+    #product-recommendation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: rem(35);
+
+        img {
+            @extend %standart-img-style;
+        }
+        figcaption {
+            @include style-figcaption;
         }
     }
 }
